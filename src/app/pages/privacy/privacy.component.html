@@ -1,7 +1,7 @@
 <div class="privacy-container">
   <div class="language-nav">
-    <a href="#hebrew" class="current">עברית</a> | 
-    <a href="#english">English</a>
+    <a (click)="scrollToSection('hebrew')" class="current">עברית</a> | 
+    <a (click)="scrollToSection('english')">English</a>
   </div>
 
   <div id="hebrew">
@@ -75,8 +75,8 @@
 
   <div id="english" class="english-section">
     <div class="language-nav">
-      <a href="#hebrew">עברית</a> | 
-      <a href="#english" class="current">English</a>
+      <a (click)="scrollToSection('hebrew')">עברית</a> | 
+      <a (click)="scrollToSection('english')" class="current">English</a>
     </div>
 
     <h1>Privacy Policy</h1>
