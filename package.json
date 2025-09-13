@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "build:gh": "ng build --base-href /ProjectGimpel/",
+    "build:gh": "ng build --base-href /project-gimpel/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

@@ -17,9 +17,16 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build:gh
+      - name: Create deployment structure
+        run: |
+          mkdir -p deploy/project-gimpel
+          cp -r dist/project-gimpel/* deploy/project-gimpel/
+          cp index.html deploy/
+          cp 404.html deploy/
+          cp .nojekyll deploy/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/project-gimpel
+          path: deploy
   deploy:
     needs: build
     runs-on: ubuntu-latest
