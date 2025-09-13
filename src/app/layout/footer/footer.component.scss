@@ -1,0 +1,16 @@
+
+.footer {
+  background: var(--footer-bg);
+  color: #eaf5ee;
+  margin-top: 4rem;
+  .inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 1rem;
+    display: grid;
+    gap: .5rem;
+  }
+  .brand { font-weight: 700; font-size: 1.25rem; }
+  .contact a { color: white; }
+  .copy { opacity: .7; }
+}

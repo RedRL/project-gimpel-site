@@ -1,0 +1,33 @@
+
+<nav class="crumbs"><a routerLink="/">&larr; חזרה לעמוד הבית</a></nav>
+
+<section class="grid">
+  <div class="side">
+    <div class="card checklist">
+      <h3>למה להתחבר?</h3>
+      <ul>
+        <li><span class="check">✔</span> צפייה בהיסטוריית השיחות</li>
+        <li><span class="check">✔</span> הגדרות והעדפות מותאמות</li>
+        <li><span class="check">✔</span> סטטיסטיקות שימוש בסיסיות</li>
+        <li><span class="check">✔</span> גיבוי ושחזור שירות</li>
+      </ul>
+    </div>
+    <div class="card help">
+      <h3>צריכים עזרה?</h3>
+      <p>אם אתם מתקשים בתהליך ההתחברות — אנחנו כאן לעזור!</p>
+      <a class="btn" href="https://wa.me/0797291729" target="_blank" rel="noopener">פנו אלינו בוואטסאפ</a>
+    </div>
+  </div>
+
+  <div class="card login">
+    <h2>אזור משתמש</h2>
+    <p>התחברו עם מספר הוואטסאפ שלכם כדי לגשת לחשבון האישי</p>
+
+    <form (submit)="$event.preventDefault()">
+      <label for="phone">מספר טלפון</label>
+      <input id="phone" type="tel" placeholder="(050‑1234567) הכניסו מספר טלפון" />
+      <button class="btn">שלחו לי קוד בוואטסאפ</button>
+      <div class="hint">* זהו דף הדגמה — אין שליחה אמיתית</div>
+    </form>
+  </div>
+</section>

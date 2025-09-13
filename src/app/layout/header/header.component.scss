@@ -1,0 +1,35 @@
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--surface-2);
+  .inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem 1rem;
+    gap: 1rem;
+  }
+  .brand {
+    font-weight: 800;
+    color: var(--primary-900);
+    text-decoration: none;
+    font-size: 1.125rem;
+  }
+  nav a {
+    margin-inline: .25rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    padding: .45rem .7rem;
+    border-radius: 12px;
+  }
+  nav a.active {
+    background: var(--primary-50);
+    color: var(--primary-900);
+  }
+  .user-link { border: 1px solid var(--primary-200); }
+}

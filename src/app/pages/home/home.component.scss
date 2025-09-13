@@ -1,0 +1,40 @@
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  h1 { font-size: clamp(2rem, 6vw, 3.25rem); margin: 0 0 .5rem; }
+  .lead { font-size: 1.1rem; color: var(--text-muted); margin: 0 0 1rem; }
+  .btn-whatsapp { background: #22c55e; }
+  .features {
+    display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-top: 1.25rem;
+    .feature { background: var(--surface); border: 1px solid var(--surface-2); border-radius: 14px; padding: .9rem; }
+    .icon-circle { width: 44px; height: 44px; border-radius: 50%; background: var(--primary-50); border:1px solid var(--primary-200); display:grid; place-items:center; font-size: 1.25rem; margin: 0 auto .5rem; }
+    .title { font-weight: 700; }
+    .desc { color: var(--text-muted); font-size: .9rem; }
+  }
+}
+.about { margin-top: 2rem; }
+.how { margin-top: 2rem; }
+.how-grid {
+  display: grid; grid-template-columns: 1fr 1.4fr; gap: 1rem;
+  .start-card { text-align: center;
+    .phone { font-size: 3rem; }
+    .actions { display: grid; gap: .5rem; margin-top: .75rem; }
+    .btn.outline { background: transparent; border: 1px solid var(--primary-200); color: var(--primary-900); }
+  }
+  .steps {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    .step { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: .75rem;
+      small { color: var(--text-muted); }
+    }
+    .num { width: 2rem; height: 2rem; display:grid; place-items:center; background: var(--primary-50); border:1px solid var(--primary-200); border-radius: 999px; font-weight: 700; }
+  }
+}
+.signup { margin-top: 2rem; text-align: center;
+  .inline-form { display: inline-flex; gap: .5rem; align-items: center; }
+  input { padding: .65rem .8rem; border-radius: 12px; border: 1px solid var(--surface-3); min-width: 260px; background: white; color: #122; }
+}
+@media (max-width: 1000px) {
+  .hero .features { grid-template-columns: repeat(2,1fr); }
+  .how-grid { grid-template-columns: 1fr; }
+}
