@@ -9,8 +9,18 @@
     padding: 2rem 1rem;
     display: grid;
     gap: .5rem;
+    text-align: center;
   }
   .brand { font-weight: 700; font-size: 1.25rem; }
   .contact a { color: white; }
+  .links a { 
+    color: #c8f0d7; 
+    text-decoration: underline;
+    font-size: 0.9rem;
+    
+    &:hover {
+      color: white;
+    }
+  }
   .copy { opacity: .7; }
 }

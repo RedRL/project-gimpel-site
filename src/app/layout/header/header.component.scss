@@ -15,10 +15,12 @@
     gap: 1rem;
   }
   .brand {
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary-900);
     text-decoration: none;
     font-size: 1.125rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Rubik', Arial, sans-serif;
+    margin-right: 1rem;
   }
   nav a {
     margin-inline: .25rem;
