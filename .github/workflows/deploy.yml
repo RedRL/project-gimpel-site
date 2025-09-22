@@ -1,5 +1,4 @@
-
-name: Deploy to GitHub Pages
+﻿name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
@@ -23,7 +22,6 @@ jobs:
           cp -r dist/project-gimpel/* deploy/project-gimpel/
           cp deploy/project-gimpel/index.html deploy/project-gimpel/404.html
           cp index.html deploy/
-          cp 404.html deploy/
           cp .nojekyll deploy/
       - uses: actions/upload-pages-artifact@v3
         with:
