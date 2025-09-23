@@ -24,6 +24,10 @@ jobs:
           cp index.html deploy/
           cp 404.html deploy/
           cp .nojekyll deploy/
+          # Copy static files from public directory
+          if [ -d "public" ]; then
+            cp -r public/* deploy/
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: deploy
